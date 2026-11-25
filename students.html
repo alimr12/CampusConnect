@@ -6,47 +6,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body data-page="admin">
+
     <div class="layout">
         <aside class="sidebar">
             <h2>Campus Connect</h2>
             <p>Admin Panel</p>
+
             <a href="dashboard.html">Dashboard</a>
             <a href="students.html" class="selected">Students</a>
             <a href="courses.html">Courses</a>
             <a href="attendance.html">Attendance</a>
             <a href="reports.html">Reports</a>
+
             <button class="logoutBtn">Logout</button>
         </aside>
 
-        <main class="main">
-            <div class="top">
-                <div>
-                    <h1>Students</h1>
-                    <p>Manage registered students</p>
-                </div>
-                <div class="admin-icon">A</div>
+        <main class="main-content">
+            <div class="topbar">
+                <h1>Student Management</h1>
             </div>
 
-            <div class="panel">
-                <h2>Add New Student</h2>
+            <div class="content-box">
+                <h2>Add Student</h2>
+
                 <form id="studentForm" class="form-grid">
-                    <input type="text" id="studentName" placeholder="Full Name" required>
-                    <input type="email" id="studentEmail" placeholder="Email" required>
-                    <input type="password" id="studentPassword" placeholder="Initial Password" required>
-                    <button class="btn" type="submit">Add Student</button>
+                    <input type="text" id="studentName" placeholder="Student Name" required>
+                    <input type="email" id="studentEmail" placeholder="Student Email" required>
+                    <input type="password" id="studentPassword" placeholder="Password" minlength="6" required>
+                    <button type="submit" class="btn">Add Student</button>
                 </form>
-                <p id="studentMessage"></p>
+
+                <p id="studentMessage" class="message"></p>
             </div>
 
-            <div class="panel">
-                <h2>Student Records</h2>
+            <div class="content-box">
+                <h2>All Students</h2>
+
                 <input type="text" id="searchStudent" placeholder="Search by name or email">
-                <div class="table-box">
+
+                <div class="table-container">
                     <table>
                         <thead>
                             <tr>
                                 <th>Name</th>
                                 <th>Email</th>
+                                <th>Registered Courses</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -56,6 +60,7 @@
             </div>
         </main>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -17,38 +17,56 @@
             <a href="reports.html">Reports</a>
             <button class="logoutBtn">Logout</button>
         </aside>
-
-        <main class="main">
-            <div class="top">
+        <main class="main-content">
+            <div class="page-heading">
                 <div>
-                    <h1>Attendance</h1>
-                    <p>Record student attendance</p>
+                    <h1>Attendance Management</h1>
+                    <p>Record and monitor student attendance.</p>
                 </div>
-                <div class="admin-icon">A</div>
+                <span class="page-tag">STUDENT RECORDS</span>
             </div>
-
-            <div class="panel">
-                <h2>Mark Attendance</h2>
-                <form id="attendanceForm" class="form-grid">
-                    <select id="attendanceStudent" required>
-                        <option value="">Select Student</option>
-                    </select>
-                    <select id="attendanceCourse" required>
-                        <option value="">Select Course</option>
-                    </select>
-                    <select id="attendanceStatus" required>
-                        <option value="">Select Status</option>
-                        <option value="Present">Present</option>
-                        <option value="Absent">Absent</option>
-                    </select>
-                    <button type="submit" class="btn">Save Attendance</button>
+            <div class="content-box attendance-form-panel">
+                <div class="section-heading">
+                    <div>
+                        <h2>Mark Attendance</h2>
+                        <p>Select a student and their registered course.</p>
+                    </div>
+                    <div class="section-icon">✓</div>
+                </div>
+                <form id="attendanceForm" class="attendance-grid">
+                    <div>
+                        <label for="attendanceStudent">Select Student</label>
+                        <select id="attendanceStudent" required>
+                            <option value="">Select Student</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="attendanceCourse">Select Course</label>
+                        <select id="attendanceCourse" required>
+                            <option value="">Select Course</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="attendanceStatus">Attendance Status</label>
+                        <select id="attendanceStatus" required>
+                            <option value="Present">Present</option>
+                            <option value="Absent">Absent</option>
+                        </select>
+                    </div>
+                    <div class="attendance-button">
+                        <button type="submit" class="btn full-btn">Save Attendance</button>
+                    </div>
                 </form>
-                <p id="attendanceMessage"></p>
+                <p id="attendanceMessage" class="message"></p>
             </div>
-
-            <div class="panel">
-                <h2>Attendance Records</h2>
-                <div class="table-box">
+            <div class="content-box table-panel">
+                <div class="section-heading">
+                    <div>
+                        <h2>Attendance Records</h2>
+                        <p>View all saved student attendance records.</p>
+                    </div>
+                </div>
+                <div class="table-container">
                     <table>
                         <thead>
                             <tr>
