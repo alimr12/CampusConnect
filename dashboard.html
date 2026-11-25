@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Connect - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="admin">
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Campus Connect</h2>
+            <p>Admin Panel</p>
+            <a href="dashboard.html" class="selected">Dashboard</a>
+            <a href="students.html">Students</a>
+            <a href="courses.html">Courses</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="reports.html">Reports</a>
+            <button class="logoutBtn">Logout</button>
+        </aside>
+
+        <main class="main">
+            <div class="top">
+                <div>
+                    <h1>Admin Dashboard</h1>
+                    <p id="welcomeAdmin">Welcome Administrator</p>
+                </div>
+                <div class="admin-icon">A</div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Students</h3>
+                    <h2 id="totalStudents">0</h2>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Courses</h3>
+                    <h2 id="totalCourses">0</h2>
+                </div>
+                <div class="stat-card">
+                    <h3>Attendance Records</h3>
+                    <h2 id="totalAttendance">0</h2>
+                </div>
+            </div>
+
+            <div class="welcome-card">
+                <h2>Manage Your Campus</h2>
+                <p>Manage students, courses and attendance from one place.</p>
+            </div>
+
+            <h2 class="section-title">Quick Access</h2>
+            <div class="quick-links">
+                <a href="students.html">Manage Students</a>
+                <a href="courses.html">Manage Courses</a>
+                <a href="attendance.html">Take Attendance</a>
+                <a href="reports.html">View Reports</a>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

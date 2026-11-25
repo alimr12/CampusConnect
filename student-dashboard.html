@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Connect - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="student">
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Campus Connect</h2>
+            <p>Student Portal</p>
+            <a href="student-dashboard.html" class="selected">Dashboard</a>
+            <a href="student-dashboard.html#myCourses">My Courses</a>
+            <a href="student-dashboard.html#myAttendance">My Attendance</a>
+            <button class="logoutBtn">Logout</button>
+        </aside>
+
+        <main class="main">
+            <div class="top">
+                <div>
+                    <h1>Student Dashboard</h1>
+                    <p id="welcomeStudent">Welcome Student</p>
+                </div>
+                <div class="admin-icon">S</div>
+            </div>
+
+            <div class="welcome-card">
+                <h2 id="studentName">Welcome</h2>
+                <p id="studentEmail"></p>
+            </div>
+
+            <h2 class="section-title" id="myCourses">Available Courses</h2>
+            <div id="studentCourses" class="course-grid"></div>
+
+            <h2 class="section-title" id="myAttendance">My Attendance</h2>
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Course</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myAttendanceList"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
